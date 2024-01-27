@@ -49,7 +49,7 @@ article {
 }
 
 .project-img {
-  background-image: url("Product preview card component/images/image-product-mobile.jpg");
+  background-image: url("/Product preview card component/images/image-product-mobile.jpg");
   background-position: center;
   height: 300px;
   background-size: cover;
