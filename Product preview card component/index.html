@@ -26,9 +26,16 @@
     <title>Product preview card component</title>
   </head>
   <body>
+    
     <div class="container">
-      <img src="images/image-product-desktop.jpg" alt="picture of perfume" />
-
+      <div class="productimg">
+        <!-- 
+          Tried using the image without a class before adding it into a container
+          <img
+          src="images/image-product-desktop.jpg"
+          alt="picture of perfume"
+        /> -->
+      </div>
       <div class="description">
         <p class="overline">Perfume</p>
 
@@ -43,9 +50,12 @@
           <p><span class="newprice">$149.99</span></p>
           <p><span class="sale">$169.99</span></p>
         </div>
-      </div>
 
-      <button><a href="">Add to Cart</a></button>
+        <a href="" class="button">
+          <img src="images/icon-cart.svg" />
+          <span class="text">Add to Cart</span>
+        </a>
+      </div>
     </div>
 
     <div class="attribution">
