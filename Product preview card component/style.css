@@ -1,0 +1,98 @@
+/* Mobile */
+:root {
+   --aurometal-saurus: #6C7289;
+   --cream: #F2EAE2;
+   --white: #FFFFFF;
+   --gunmetal: #1C232B;
+   --deep-aquamarine: #3D8168;
+   --serif: 'Fraunces', serif;
+   --sans: 'Montserrat', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+background-color: var(--cream);
+}
+
+h1 {
+    color: var(--gunmetal);
+    font-family: var(--serif);
+    margin: 0;
+}
+
+p {
+color: var(--aurometal-saurus);
+font-family: var(--sans);
+font-size: 0.875rem;
+line-height: 1.5;
+}
+
+img {
+    width: 100%;
+
+}
+
+.attribution {
+    font-family: var(--sans);
+    color: var(--deep-aquamarine);
+}
+
+button {
+background-color: var(--deep-aquamarine);
+width: auto;
+padding: 0.5rem;
+border-radius: 0.5rem;
+border: 0px;
+font-family: var(--sans);
+}
+
+button a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.container {
+    width: 375px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+
+}
+
+.overline {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.3125rem;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+
+}
+
+.description {
+margin: 1.5rem;
+}
+
+.price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.newprice {
+    font-family: var(--serif);
+    font-size: 2rem;
+    color: var(--deep-aquamarine);
+}
+
+.sale {
+    text-decoration: line-through;
+}
