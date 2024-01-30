@@ -10,10 +10,11 @@
 :root {
   --dark-charcoal: #312e2c;
   --wenge-brown: #5f564d;
-  --snow: #FFF7FB;
-  --dark-raspberry: #7A284E;
+  --snow: #fff7fb;
+  --dark-raspberry: #7a284e;
   --brandy-red: #854632;
-  --white-coffee: #E3DDD7;
+  --white-coffee: #e3ddd7;
+  --eggshell: #F3E5D7;
   --serif: "Young serif";
   --sans: "Outfit";
 }
@@ -33,6 +34,7 @@ body {
   margin: 0;
   font-family: var(--sans);
   font-size: 1rem;
+  background-color: var(--eggshell);
 }
 
 img {
@@ -40,59 +42,98 @@ img {
 }
 
 h1 {
-    font-family: var(--serif);
-    color: var(--dark-charcoal);
+  font-family: var(--serif);
+  color: var(--dark-charcoal);
 }
 
 h2 {
-    font-family: var(--serif);
-    color: var(--brandy-red);
-    font-size: 1.75rem;
+  font-family: var(--serif);
+  color: var(--brandy-red);
+  font-size: 1.75rem;
 }
 
 h3 {
-    font-family: var(--sans);
-    font-weight: 600;
-    color: var(--dark-raspberry);
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--dark-raspberry);
+  margin: 0;
 }
-
 
 .content {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
-
 p {
-    line-height: 1.5;
-    font-weight: normal;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
 .callout {
-    background-color: var(--snow);
-    padding: 1.5rem;
-    border-radius: .75rem;
+  background-color: var(--snow);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
 }
-
 
 ul,
 ol {
-    padding-left: 1.5rem;
-
+  padding-left: 1.5rem;
 }
 
 li {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 li::marker {
-color: var(--brandy-red);
+  color: var(--brandy-red);
 }
 
 .bold-text {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .divider {
-    height: 1px;
-    background-color: var(--white-coffee);
+  height: 1px;
+  background-color: var(--white-coffee);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+}
+
+th {
+  text-align: left;
+  color: var(--wenge-brown);
+  font-weight: normal;
+}
+
+td {
+  font-weight: bold;
+  color: var(--brandy-red);
+}
+
+tr {
+  border-bottom: 1px solid var(--white-coffee);
+}
+
+.card {
+background-color: white;
+}
+
+.attribution {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+  .card {
+    width: 736px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin: 2rem auto;
+  }
 }
