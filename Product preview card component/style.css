@@ -52,7 +52,8 @@ a {
   }
 
   a:hover {
-    color: var(--deep-aquamarine-hover);
+    color: white;
+    
     }
 
 .button {
