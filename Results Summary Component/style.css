@@ -175,6 +175,7 @@ a.button:hover {
 
   .blue-bg {
     flex-basis: 50%;
+    border-radius: 2rem;
   }
 
   .content-desc {
@@ -183,5 +184,5 @@ a.button:hover {
 }
 
 .attribution {
-  padding-top: 2rem;
+  text-align: center;
 }
