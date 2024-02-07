@@ -103,10 +103,17 @@ p {
   overflow: hidden;
 }
 
+.images {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 3rem 0;
+}
+
 .image-container {
-  margin: 2rem auto;
-  border: 1px solid red;
-  width: 50%;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -117,6 +124,9 @@ p {
   margin: 0 auto;
 }
 
+#section-1 {
+  padding: 2rem;
+}
 .section-number {
   border: 1px solid var(--lightgray);
   margin: 0 auto;
@@ -151,6 +161,7 @@ footer {
   position: relative;
   width: 100%;
   height: 400px;
+  z-index: 0;
 }
 
 .overlay {
@@ -163,6 +174,26 @@ footer {
 }
 
 .footer-content {
-    color: var(--white);
-    padding: 1rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-content p,
+.footer-content h2 {
+  color: var(--white);
+}
+
+.ending {
+  position: relative;
+}
+
+.divison {
+  margin-bottom: -2rem;
+  z-index: 1;
+  position: relative;
 }
