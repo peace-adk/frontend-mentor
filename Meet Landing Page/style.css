@@ -64,6 +64,8 @@ p {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  justify-content: center;
+
 }
 
 .button.primary {
@@ -196,4 +198,23 @@ footer {
   margin-bottom: -2rem;
   z-index: 1;
   position: relative;
+}
+
+@media (min-width: 768px){
+    .buttons-container {
+        flex-direction: row;
+    }
+
+    .images {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+@media (min-width: 1024px){
+
+    .images {
+        padding: 6rem;
+    }
 }
