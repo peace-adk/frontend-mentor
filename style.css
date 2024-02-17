@@ -78,9 +78,9 @@ a.button:hover {
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
   width: 70%;
-
+  margin: 0 auto;
   /* gap: 1rem;
   /* flex-direction: row; */
   /* align-items: flex-start;
