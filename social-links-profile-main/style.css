@@ -80,6 +80,7 @@ img {
   text-decoration: none;
   color: var(--white);
   border-radius: 0.5rem;
+  font-weight: bold;
 }
 
 a:hover {
