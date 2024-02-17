@@ -1,0 +1,119 @@
+:root {
+  --darkpurple: #24053e;
+  --eucalyptus: #44ffa1;
+  --davys-gray: #584d62;
+  --ghost-white: #fcf8ff;
+  --white: #ffffff;
+  --sans: "Manrope", sans-serif;
+  --serif: "Fraunces", serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--sans);
+}
+
+h1 {
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  margin: 4rem 0;
+}
+
+h2 {
+    font-family: var(--serif);
+    font-size: 1.75rem;
+    color: var(--darkpurple);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p {
+    color: var(--davys-gray);
+}
+
+#hero {
+  background-color: var(--darkpurple);
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  height: 480px;
+  border-radius: 0 0 5% 5%;
+}
+
+.button {
+  font-size: 1.125rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: -0.16px;
+}
+
+.button:hover {
+  color: var(--eucalyptus);
+}
+
+.button.primary {
+  background-color: var(--eucalyptus);
+  padding: 0.75rem 1.5rem;
+  color: var(--darkpurple);
+}
+
+.button.secondary {
+  color: var(--white);
+  border-bottom: 3px solid var(--eucalyptus);
+}
+
+.button.secondary:hover {
+  color: var(--eucalyptus);
+  border-bottom: 3px solid var(--eucalyptus);
+}
+
+.emphasis-text {
+  border-bottom: 3px solid var(--eucalyptus);
+}
+
+#value-props {
+  text-align: center;
+  margin: 0 auto;
+  margin: 2rem;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.number {
+  border: 1px solid var(--darkpurple);
+  display: flex;
+  height: 46px;
+  width: 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.number p {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+}
